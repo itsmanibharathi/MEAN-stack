@@ -1,0 +1,18 @@
+
+.left{
+    background-color: wheat;
+    display: flex;
+    float: left;   
+    height: 100%;
+    width: 15%;
+    position: fixed;
+    
+}
+.right{
+    background-color: beige;
+    float: right;
+    height: 100vh;
+    overflow: auto;
+    position:static;
+    width: 85%;
+}

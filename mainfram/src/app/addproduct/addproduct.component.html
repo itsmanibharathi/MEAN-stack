@@ -1,0 +1,42 @@
+<div style="width: 50%; float: left; margin-left: 15%; margin-top: 10%;"> 
+   <form action="http://localhost:4000/api/product" method="post" >
+        <div class="form-group">
+            <label for="name">Product Name: </label>
+            <input type="text"class="form-control" id="name" name="name" placeholder="Plses enter product   name"> 
+        </div>
+
+        <div class="form-group">
+          <label for="img">product image </label>
+          <input type="url"class="form-control" id="img"name="img" placeholder="Plses enter product img">
+      
+        </div>
+        
+        <div class="form-group">
+          <label for="price">Price:</label>
+          <input type="number"class="form-control" id="price" name="price"placeholder="Plses enter product price">
+      
+        </div>
+        
+        <div class="form-group">
+          <label for="lang">Language</label>
+          <input type="text"class="form-control" id="lang"name="lang"placeholder="Plses enter product stock">
+            
+        </div>
+        
+        <div class="form-group">
+            <label for="duration">Duration </label>
+          <input type="text"class="form-control" id="duration" name="duration" placeholder="Plses enter product mack">
+        
+          </div>
+          
+          <div class="form-group">
+            <label for="rating">product rating </label>
+            <input type="number" class="form-control" id="rating" name="rating"placeholder="Plses enter product rating">
+        
+          </div>
+          <!--  [disabled]="!formdata.valid" -->
+        <button class="btn btn-primary">Submit</button>
+          
+      </form>        
+
+</div>

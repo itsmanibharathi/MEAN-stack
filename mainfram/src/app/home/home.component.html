@@ -1,0 +1,30 @@
+<div > 
+  <h4 class="display-3 text-center text-dark my-3">VIEW OUR COURSES</h4>
+  <div class="row" style=" margin : 25px;">
+    <div  *ngFor="let product of products;" class="col-4">
+      <div class="card shadow cs " style=" margin-top: 15px;" >
+        <!-- <img src="https://image.shutterstock.com/image-vector/sample-stamp-rubber-style-red-260nw-1811246308.jpg" alt=""> -->
+        <img src={{product.product_img}} style="height: 250px;" class="card-img-top" alt="" />
+        <div class="card-body">
+          <h5 class="card-title">{{product.product_name | uppercase}}</h5>
+          <h6 class="card-subtitle mb-2 text-muted">₹{{product.product_price}} </h6>
+          <div class="icon">
+            <div>
+              <a routerLink="addproduct" class="card-link col-4"> <i class="bi bi-clock-history"></i>{{product.product_duration}} </a>
+            </div>
+            <div>
+              <a routerLink="updateproduct" ><i class="bi bi-translate"></i> {{product.product_language}} </a>
+            </div>
+            <div>
+              {{product._id}}
+              <a (click)="deleteproduct(product._id)" class="card-link"><i class="bi bi-trash3-fill"></i></a>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<!-- <p>{{products |json}}</p> -->

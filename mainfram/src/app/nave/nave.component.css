@@ -1,0 +1,32 @@
+
+.content{
+  padding-top: 30px;
+  border-top: 1px;
+  border-top-style: solid;
+  list-style-type: none;
+  width: 200px;
+
+}
+
+
+a{
+  width: 100%;
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+.item:hover{
+  background-color: #555;
+  color: white;
+
+}
+i{
+  margin-right: 3px;
+}
+.foot{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}

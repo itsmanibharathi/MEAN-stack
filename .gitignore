@@ -1,0 +1,10 @@
+/mainfram/dist
+/mainfram/tmp
+/mainfram/out-tsc
+/mainfram/bazel-out
+# Node
+/mainfram/node_modules
+/server/node_modules
+/mainfram/.vscode/*
+/mainfram/.angular/cache
+/mainfram/demo1
