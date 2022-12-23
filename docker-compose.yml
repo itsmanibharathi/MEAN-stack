@@ -9,9 +9,9 @@ services:
     networks:
       - widgets
 
-  mainfram:
+  mainframe:
     # hostname: localhost
-    build: ./mainfram
+    build: ./mainframe
     ports:
       - "3000:80"
     networks:
@@ -23,7 +23,7 @@ services:
     ports:
       - "80:80"
     links:
-      - mainfram
+      - mainframe
       - server
     networks:
       - widgets

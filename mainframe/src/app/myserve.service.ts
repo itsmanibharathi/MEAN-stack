@@ -9,11 +9,11 @@ export class MyserveService {
 
   constructor(private http:HttpClient ) { }
 
-  // port:number=process.env.PORT || 4000
-  port:number=4000
-
+  // port:number=4000
+  // port:number=process.env['PORT'] || 4000
+  
   getproduct():Observable<Product[]>{
-    return  this.http.get<Product[]>(`http://localhost:${this.port}/api/product`)
+    return  this.http.get<Product[]>(`/api/product`)
   }
   httpOptions = {
     headers: new HttpHeaders({
@@ -21,8 +21,7 @@ export class MyserveService {
     }),
   };
   delproduct(id:any){
-    console.log(`http://localhost:${this.port}/api/product/${id} `+typeof(id))
-        this.http.delete(`http://localhost:${this.port}/api/product/${id}`,this.httpOptions).subscribe(
+    this.http.delete(`/api/product/${id}`,this.httpOptions).subscribe(
     (val) => {
         console.log("The DELETE observable is now completed.");
     });
